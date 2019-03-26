@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Favorite TV Shows</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      //defining variables
+      var favTVshows = [1, 2, 3].splice();
+      String.length;
+      String.name;
+      var antonio = "antonio";
+      console.log(antonio);
+      antonio = antonio.toUpperCase();
+      console.log(antonio);
+      var tvShow;
+
+      // For Loop Elements Repeats 3 Times
+      for (var i = 1; i <= 4; i++) {
+        // Ask the user what your favorite TV show is
+        tvShow = prompt("What's your #" + i + " favorite TV show?");
+
+        // pushes the current value within the parens at the end of the array
+        favTVshows.push(tvShow);
+      }
+
+      // loops through the array
+      for (var j = 0; j < favTVshows.length; j++) {
+        // using bracket notation we're calling the J index of the array
+        alert(favTVshows[j]);
+      }
+    </script>
+  </body>
+</html>

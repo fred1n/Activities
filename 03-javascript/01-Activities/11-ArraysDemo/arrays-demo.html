@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Arrays Demo</title>
+  </head>
+  <body>
+    <h1>Open the console to see the magic!</h1>
+
+    <script type="text/javascript">
+      // Our array of zoo animals.
+      var zooAnimals = [
+        "Zebra",
+        "Rhino",
+        "Giraffe",
+        "Owl",
+        5,
+        5,
+        5,
+        4,
+        "antonio",
+        {
+          bob: false,
+          antonio: { "squ ats": ["You know it", "Duh", { again: "test" }] },
+          ihab: true
+        }
+      ];
+      console.log(typeof zooAnimals);
+      // Prints 4 to the console because there are 4 items in our zooAnimals array.
+      console.log(zooAnimals.length);
+
+      // Prints Rhino to the console. Remember, the first item in an array has an index position of 0!
+      console.log(zooAnimals[9].antonio["squ ats"]);
+      // console.log(zooAnimals[9].ihab);
+      // console.log(zooAnimals[9].bob);
+
+      // Prints undefined... because the last index ("Owl") is 3.
+      console.log(zooAnimals[4]);
+    </script>
+  </body>
+</html>

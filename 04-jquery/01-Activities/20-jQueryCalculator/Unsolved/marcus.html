@@ -1,0 +1,66 @@
+// operators + - * / 
+// let number1 = document.getElementById("button-1")
+// let number2 = document.getElementById("button-2")
+
+
+// console.log(number2)
+
+// .onclick 
+// onclick operators
+
+
+    // Grap value assoicated with button user picks
+
+  $(".btn").on("click", function() {
+    // Grap value assoicated with button user picks
+    var userPick = $(this).val() ;
+    
+    if (userPick === "plus" ) {
+      userPick = "+"
+    } else if (userPick === "minus" ) { 
+      userPick = "-"
+    } else if  (userPick === "times" ) {
+      userPick = "*"
+    } else if  (userPick === "divide" ) {
+      userPick = "/"
+    } else if  (userPick === "power" ) {
+      userPick = "^"
+    } 
+    console.log("User Pick ", userPick);
+    });
+// functions for operations
+
+function divide(first, second) {
+    var divideNum = first / second;
+    return divideNum;
+}
+
+
+function multiply(first, second) {
+    var multiplyNum = first * second;
+    return multiplyNum;
+}
+
+function subtract(first, second) {
+    var subtractNum = first - second;
+    return subtractNum;
+}
+
+function addition(first, second) {
+    var addNum = first + second;
+    return addNum;
+}
+
+
+var divideNum = divide(10, 2);
+console.log(divideNum)
+
+
+
+
+// .innerHTML for result
+
+
+
+
+
